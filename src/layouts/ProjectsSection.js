@@ -1,19 +1,18 @@
 import Card from "react-bootstrap/Card";
-// import  Zoom  from "react-reveal/Zoom";
-// import Fade  from "react-reveal/Fade";
+import Zoom from "react-reveal/Zoom";
+import Fade from "react-reveal/Fade";
 import { useInView } from "react-intersection-observer";
 
 function ProjectsSection() {
-  // const [ref, inView] = useInView({
-  //   triggerOnce: false,
-  //   threshold: 0.3,
-  // });
+  const [ref, inView] = useInView({
+    triggerOnce: false,
+    threshold: 0.3,
+  });
   return (
-    // ref={ref}
-    // style={{ minHeight: "100vh" }}
     <div
       className="projects-container"
-     
+      ref={ref}
+      style={{ minHeight: "100vh" }}
     >
       {/* <Fade when={inView}> */}
       <div className="text-above-line">
@@ -21,24 +20,24 @@ function ProjectsSection() {
         <hr class="line-title" />
       </div>
       {/* </Fade> */}
-      {/* <Fade when={inView}> */}
+      <Fade when={inView}>
         <div className="card-wrapper">
-          {/* <Zoom left when={inView}> */}
+          <Zoom left when={inView}>
             <img
               className="project-background left"
               src={require("../assests/particles_crop.png")}
               alt=""
             />
-          {/* </Zoom>
-          <Zoom right when={inView}> */}
+          </Zoom>
+          <Zoom right when={inView}>
             <img
               className="project-background right"
               src={require("../assests/particles_crop.png")}
               alt=""
             />
-          {/* </Zoom> */}
+          </Zoom>
           <div className="column">
-            {/* <Zoom left when={inView}> */}
+            <Zoom left when={inView}>
               <Card className="card-container left text-center">
                 <Card.Body>
                   <div className="card-hover text-white rounded">
@@ -57,8 +56,8 @@ function ProjectsSection() {
                   </div>
                 </Card.Body>
               </Card>
-            {/* </Zoom> */}
-            {/* <Zoom left when={inView}> */}
+            </Zoom>
+            <Zoom left when={inView}>
               <Card className="card-container left text-center">
                 <Card.Body>
                   <div className="card-hover text-white rounded">
@@ -81,10 +80,10 @@ function ProjectsSection() {
                   </div>
                 </Card.Body>
               </Card>
-            {/* </Zoom> */}
+            </Zoom>
           </div>
           <div className="column">
-            {/* <Zoom right when={inView}> */}
+            <Zoom right when={inView}>
               <Card className="card-container right text-center">
                 <Card.Body>
                   <div className="card-hover text-white rounded">
@@ -106,8 +105,8 @@ function ProjectsSection() {
                   </div>
                 </Card.Body>
               </Card>
-            {/* </Zoom> */}
-            {/* <Zoom right when={inView}> */}
+            </Zoom>
+            <Zoom right when={inView}>
               <Card className="card-container right text-center">
                 <Card.Body>
                   <div className="card-hover text-white rounded">
@@ -127,8 +126,8 @@ function ProjectsSection() {
                   </div>
                 </Card.Body>
               </Card>
-            {/* </Zoom> */}
-            {/* <Zoom right when={inView}> */}
+            </Zoom>
+            <Zoom right when={inView}>
               <Card className="card-container right text-center">
                 <Card.Body>
                   <div className="card-hover text-white rounded">
@@ -148,10 +147,10 @@ function ProjectsSection() {
                   </div>
                 </Card.Body>
               </Card>
-            {/* </Zoom> */}
+            </Zoom>
           </div>
         </div>
-      {/* </Fade> */}
+      </Fade>
     </div>
   );
 }
