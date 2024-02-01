@@ -1,8 +1,8 @@
 // import { Zoom } from "react-reveal";
 // import Fade from "react-reveal/Fade";
 import { useInView } from "react-intersection-observer";
-import Zoom from "react-reveal/Zoom";
-import Fade from "react-reveal/Fade";
+// import Zoom from "react-reveal/Zoom";
+// import Fade from "react-reveal/Fade";
 
 function WorkExpSection() {
   const [ref, inView] = useInView({
@@ -22,9 +22,9 @@ function WorkExpSection() {
         <hr class="line-title" />
       </div>
       {/* </Fade> */}
-      <Fade when={inView}>
+      {/* <Fade when={inView}> */}
         <div className="work-exp-container">
-          <Zoom left when={inView}>
+          {/* <Zoom left when={inView}> */}
             <div className="graphs">
               <img
                 className="first-img"
@@ -46,8 +46,8 @@ function WorkExpSection() {
                 alt=""
               />
             </div>
-          </Zoom>
-          <Zoom right when={inView}>
+          {/* </Zoom> */}
+          {/* <Zoom right when={inView}> */}
             <div className="jobs-div">
               <div className="job-div">
                 <h2>FRONTEND DEVELOPER | PULSE FOR INTEGRATED SOLUTIONS</h2>
@@ -74,9 +74,9 @@ function WorkExpSection() {
                 </p>
               </div>
             </div>
-          </Zoom>
+          {/* </Zoom> */}
         </div>
-      </Fade>
+      {/* </Fade> */}
     </div>
   );
 }
