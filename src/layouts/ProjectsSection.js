@@ -4,15 +4,16 @@ import Card from "react-bootstrap/Card";
 import { useInView } from "react-intersection-observer";
 
 function ProjectsSection() {
-  const [ref, inView] = useInView({
-    triggerOnce: false,
-    threshold: 0.3,
-  });
+  // const [ref, inView] = useInView({
+  //   triggerOnce: false,
+  //   threshold: 0.3,
+  // });
   return (
+    // ref={ref}
+    // style={{ minHeight: "100vh" }}
     <div
       className="projects-container"
-      ref={ref}
-      style={{ minHeight: "100vh" }}
+     
     >
       {/* <Fade when={inView}> */}
       <div className="text-above-line">

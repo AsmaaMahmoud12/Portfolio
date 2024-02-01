@@ -5,16 +5,17 @@ import { useInView } from "react-intersection-observer";
 // import Fade from "react-reveal/Fade";
 
 function WorkExpSection() {
-  const [ref, inView] = useInView({
-    triggerOnce: false,
-    threshold: 0.5,
-  });
+  // const [ref, inView] = useInView({
+  //   triggerOnce: false,
+  //   threshold: 0.5,
+  // });
 
   return (
+    // ref={ref}
+    //   style={{ minHeight: "100vh" }}
     <div
       className="projects-container"
-      ref={ref}
-      style={{ minHeight: "100vh" }}
+      
     >
       {/* <Fade when={inView}> */}
       <div className="text-above-line">

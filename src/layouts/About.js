@@ -3,13 +3,14 @@
 import { useInView } from "react-intersection-observer";
 
 function About() {
-  const [ref, inView] = useInView({
-    triggerOnce: false,
-    threshold: 0.5,
-  });
+  // const [ref, inView] = useInView({
+  //   triggerOnce: false,
+  //   threshold: 0.5,
+  // });
 
   return (
-    <div className="about-container" ref={ref} style={{ minHeight: "70vh" }}>
+    // ref={ref} style={{ minHeight: "70vh" }}
+    <div className="about-container">
       {/* <Fade when={inView}> */}
       <div className="text-above-line">
         <p className="text">ABOUT ME</p>
