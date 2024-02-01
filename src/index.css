@@ -14,7 +14,7 @@ code {
 }
 
 .header {
-  min-height: 62em;
+  min-height: 55em;
 }
 
 canvas {
@@ -89,11 +89,18 @@ canvas {
 
 .links-container {
   padding: 10px;
+  display: flex;
+}
+
+.links-container a {
+  display: block;
+  max-width: fit-content;
+  margin: 25px 30px;
 }
 
 .link-wrapper .links-container img {
   width: 66px;
-  margin: 4px 30px;
+  /* margin: 4px 30px; */
 }
 
 h1 {
