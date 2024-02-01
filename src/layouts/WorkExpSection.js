@@ -1,14 +1,15 @@
 // import { Zoom } from "react-reveal";
 // import Fade from "react-reveal/Fade";
-import { Fade } from "react-bootstrap";
+import { Fade } from "react-reveal/Fade";
 import { useInView } from "react-intersection-observer";
-import { Zoom } from "react-reveal";
+import { Zoom } from "react-reveal/Zoom";
 
 function WorkExpSection() {
   const [ref, inView] = useInView({
     triggerOnce: false,
     threshold: 0.5,
   });
+
   return (
     <div
       className="projects-container"
